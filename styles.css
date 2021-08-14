@@ -1,0 +1,27 @@
+* {
+  font-family: 'Andada Pro', serif,'Work Sans', sans-serif,'Crimson Text', serif;
+}
+
+body {
+  color: #222;
+  font-family:'Work Sans', sans-serif ;
+  background: #fff;
+}
+
+body.dark-theme {
+  color: #eee;
+  font-family: 'Work Sans', sans-serif;
+  background: #121212;
+}
+
+a {
+  color: #0033cc;
+}
+
+body.dark-theme a {
+  color: #809fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Crimson Text', serif;
+}
