@@ -3,15 +3,25 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Contact me</title>
+
 </head>
 
-<body>
+<body class="dark-theme || light-theme">
+  <button class="btn-toggle">🌙</button>
+  <script src="darkmode.js"></script>
   <h1>
     <strong> You can reach me at</strong>
   </h1>
 
-  
+  <a href="mailto:info@shreyanhaldankar@gmail.com"><img src="images/Icons/gmail.png" style="width:20px;height:20px;" alt="shreyanhaldankar@gmail.com">&nbsp;&nbsp;&nbsp;</a>
+
+  <a href="https://www.instagram.com/shreyan__09/"> <img src="images/Icons/instagram.png" style="width:20px;height:20px;" alt="shreyan__09"> </a>
   <hr>
   <form action="mailto:info@shreyanhaldankar@gmail.com" method="post" enctype="text/plain">
     <label for="name">Your Name : </label>
@@ -21,7 +31,7 @@
     <input id="email" type="email" name="Your E-mail   " value="" required>
     <br><br>
     <label for="message:">Your Message :</label>
-    <br> <textarea name="Message" rows="10" cols="50">Enter Your message here</textarea>
+    <br> <textarea id="message" name="Message" rows="10" cols="50" onclick="javascript:eraseText();">Enter your message</textarea>
     <br><br>
     <input type="submit" name="" value="Submit">
   </form>
